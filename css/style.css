@@ -6,40 +6,30 @@ body, p{
     vertical-align: baseline;
     border: 0;
 }
-
-
-
+/*stilizimi i header*/
 header{
     font-family: "Caslon SB Regular SC", Caslon Classico SC;
     background-color: #292930 ;
-    font-size: 100%;
+}
+header h1,p{
+    color: white;
+    margin-left: 15px;
 }
 
 h1{
-    margin-left: 15px;
     font-size: 1.4em;
-    color: white;
     padding-top: 30px;
-    
-}
-
-p{
-    padding-left: 1em;
-    font-size: 1em;
-    color: white;
-
 }
 
 nav ul li a{
     color: white;
-    
-
+    padding: 0.5em;
+    text-decoration: none;
 }
 
 nav ul li {
     list-style: none;
     display: inline;
-
 }
 
 
@@ -51,16 +41,81 @@ nav#mainMenu{
 }
 
 
-
-nav a{   
-     padding: 0.5em;
-    text-decoration: none;
+/*stilizimi i main*/
+section#firstSection img{
+    width: 100%;
+    }
+    
+section#firstSection div{
+    background-color: #999999;
 }
 
- section p{
-    padding: 100px 50px 100px 50px;
-     background-color: grey;
-     text-align: center;
-
+div#contact_us p{
+    font-size: xx-large;
+    display: inline-block;
+    width: 70%;
+    
 }
 
+div#contact_us input[type=submit]{
+    position: relative;
+    float: right;
+    width: fit-content;
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    font-family: "Caslon SB Regular SC", Caslon Classico SC;
+    font-size: 25px;
+    padding: 8px;
+    border: 2px solid black;
+}
+
+section#firstSection div{
+    padding: 1em;
+    font-size: 1em;
+}
+
+
+
+section#services div{
+    display: inline-block;
+    width: 30%;
+}
+
+section#services div img{
+    float: left;
+    display: inline-block;
+    width: 30%;
+}
+
+section#services div h3,p{
+    display: inline-block;
+    color: black;
+    width: 60;
+}
+
+
+header input[type="search"]{
+    float: right;
+    background-color:#000000;
+    border-style: none;
+    font-size: medium;
+    padding: 5px;
+    border-radius:20px;
+    margin-top: 1em;
+}
+
+
+/* 
+header button {
+    width: 20%;
+    padding: 10px;
+    background: #000000;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders 
+    cursor: pointer;
+  } */
+
+ 

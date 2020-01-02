@@ -8,7 +8,7 @@ html, body, header, nav,  section, h1, ul, body, p, footer{
 /*stilizimi i header*/
 header{
     font-family: "Caslon SB Regular SC", Caslon Classico SC;
-    background-color: #0d7a8d;
+    background-color: #2B2B2B;
 }
 
 
@@ -65,7 +65,7 @@ nav#mainMenu{
 
 header input[type="search"]{
     float: right;
-    background-color:#000000;
+    background-color:#2B2B2B;
     border-style: none;
     font-size: medium;
     padding: 5px;
@@ -86,10 +86,10 @@ header input[type="search"]{
 }
 
 #about{
-    background-color: teal;
+    font-family: "Caslon SB Regular SC", Caslon Classico SC;
+    background-color:#2B2B2B;
     padding:9% 20% 5% 20%;
     text-align: center;
-    font-family: sans-serif;
     color:#ababab;
 }
 #about p{
@@ -101,7 +101,7 @@ header input[type="search"]{
 }
 
 article h1, p{
-    color: black;
+    color: white;
 }
 
 section {

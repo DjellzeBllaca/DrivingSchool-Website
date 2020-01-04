@@ -1,13 +1,54 @@
 
-*{
-    margin: 0;
-    padding: 0;}
+html, body, header, nav,  section, h1, ul, body, p, footer{
+    margin: 0px;
+    padding: 0px;
 
+}
 /*stilizimi i header*/
 header{
     font-family: "Caslon SB Regular SC", Caslon Classico SC;
     background-color: #2B2B2B;
 }
+
+header h1,p{
+    color: white;
+    margin-left: 15px;
+}
+
+h1{
+    font-size: 1.4em;
+    padding-top: 30px;
+}
+
+nav ul li a{
+    color: white;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+
+nav#mainMenu{
+    font-size: 0.75em;
+    text-align: right;
+    padding-right: 1em;
+    padding-bottom: 2em;
+}
+
+header input[type="search"]{
+    float: right;
+    background-color:#2B2B2B;
+    border-style: none;
+    font-size: medium;
+    padding: 5px;
+    border-radius:20px;
+    margin-top: 1em;
+}
+
 
 
 
@@ -28,7 +69,12 @@ header{
     
 }
 
+
+
 #blog { margin-left:10px; }
+
+
+
 
 
 a {
@@ -44,8 +90,11 @@ a {
 }
 
 
+
 footer nav ul {
     padding-top:15px;
+
+
 }
 
 footer nav ul li{
@@ -110,6 +159,7 @@ footer div#bbb{
 }
 footer div#bbb p{
     padding: 0px 10px;
+    display: inline;
 }
 
 

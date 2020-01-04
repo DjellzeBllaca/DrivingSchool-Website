@@ -1,0 +1,115 @@
+
+*{
+    margin: 0;
+    padding: 0;}
+
+/*stilizimi i header*/
+header{
+    font-family: "Caslon SB Regular SC", Caslon Classico SC;
+    background-color: #2B2B2B;
+}
+
+
+
+  /*footer*/
+  footer div#aaaaa{
+    padding: 42px 120px;
+    background-color: #EDEDED  ;  
+    border-bottom: 1px solid black;
+    
+    
+}
+.footerDivs{
+    
+    display: inline-block;
+    width:23.1%;
+    margin-left:10px;
+    padding-left:0.1%;
+    
+}
+
+#blog { margin-left:10px; }
+
+
+a {
+    color: green;
+    text-decoration:none;
+  }
+
+.divHeader{
+    
+    color: black;
+    padding-bottom:15px;
+    
+}
+
+
+footer nav ul {
+    padding-top:15px;
+}
+
+footer nav ul li{
+    color:red;
+    font-size:0.5em;
+    border-bottom: 1px solid #404040;
+    padding-bottom:2.5px;
+
+    
+}
+
+footer nav ul li a{
+    color: black;
+    font-size:2em;
+    text-decoration:none;
+
+
+}
+
+
+
+
+form{
+    padding-top:15px;
+}
+
+footer [name]{
+    margin-bottom:6px;
+    padding: 10px;
+    width: 90%;
+    background-color: white;
+    border: none;
+    border-radius:6px;
+    resize:none;
+    
+}
+
+[type=submit]{
+    color: white;
+    background-color: #222222;
+    font-weight:bold;
+    border:none;
+    border-radius:6px;
+    width: 40%;
+    height:30px;;
+}
+
+[type=submit]:hover{
+    background-color: #505050;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+footer div#bbb{
+    margin: 0px;
+    border-top: 1px solid #3A3A3A;
+    padding: 20px 0px;
+    background-color: #2B2B2B;
+    width: 100%;
+}
+footer div#bbb p{
+    padding: 0px 10px;
+}
+
+

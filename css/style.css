@@ -1,13 +1,14 @@
 /*stilizimi i main*/
 #ballina{
-    background-image: url('../images/f1.jpg');
+    background-image: url('../images/cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+	background-attachment:fixed;
     height: 550px;
 
 }
 #sectBallina{
-    background-color: #999999;
+    background: linear-gradient(90deg,rgb(82, 56, 46) 0%,   rgb(236, 184, 115) 100%);
 }
 
 #contactUs{
@@ -18,30 +19,37 @@ div#contactUs p{
     width: 70%;
     padding: 8px;
     margin: 20px 0px;
+    display: inline-block;
+    color: white;
 }
 
 div#contactUs input[type=button]{
     margin: 40px 0px;
     float: right;
     width: 25%;
-    background-color: black;
+    background-color: #2B2B2B;;
     border-radius: 4px;
     color: white;
     font-family: "Caslon SB Regular SC", Caslon Classico SC;
     font-size: 25px;
     padding: 8px;
-    border: 2px solid black;
+    border: 2px solid #2B2B2B;;
+}
+
+#body{
+    justify-content: center;
 }
 
 #services{
-    padding: 50px 20px;
     display: flex;
+    justify-content: center;
+    padding: 50px 20px;
 }
 
 .service
-{   
-    background-color: white; 
+{   background-color: white; 
     vertical-align: middle;
+    padding: 10px;
 }
 .service img
 {
@@ -51,12 +59,13 @@ div#contactUs input[type=button]{
 .text2
 {   padding: 0px 10px;
     display: inline-block;
-    width: 320px;
+    width: 300px;
 }
 
 
 .text2 h1{
-    font-size: 2em;
+    padding: 5px;
+    font-size: 1.5em;
     font-weight: normal;
     color: #333333;
     text-align: left;
@@ -67,6 +76,8 @@ div#contactUs input[type=button]{
     
     font-size: 1em;
     color: #979797;
+    margin: 0px;
+    padding: 5px;
     
 }
 
@@ -98,26 +109,55 @@ fieldset legend
 }
 
 #features 
-{
-     vertical-align: middle;
-     width: 960px;
-    
+{   
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap; 
 }
+#features a{
+    display: flex;
+    width: 31%;
+    text-decoration: none;
+    color: black;
+}
+
 #f1, #f2
 {
-    display: flex;   
+    display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+     padding: 30px;
 }
-#f1
-{
-    margin-bottom: 30px;
-}
-.feature1, .feature2
-{
-    width: 300px;
-    height: 280px;    
-    margin-left: 90px;    
+.feauture1
+{   background-color: #EDEDED;
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;    
 
 }
+.feauture1 figcaption{
+    text-align: center;
+}
+
+
+
+
+#features img
+{
+    width: 100%;
+    height: 170px;
+    vertical-align: middle;
+}
+/* #features .figure1 figcaption{
+    background-color: red;
+    padding: 0px;
+    margin: 0px;
+} */
+
+
+
 .feature1:hover .title,.feature2:hover .title{
 display: none;
 
@@ -125,31 +165,14 @@ display: none;
 
 
 
-#features img
-{
-    width: 300px;
-    height: 170px;
-}
-
-.title p
-{ font-size: 14px;
-    color: white;
-    background-color:grey;
-    margin: 0px;
-    text-align: center;
-    padding:10px 100px;
-}
-.feature1, .feature2
-{
-    position: relative;
-}
-
 section#firstSection img{
     width: 100%;
     }
     
 section#firstSection div{
     background-color: #999999;
+    padding: 1em;
+    font-size: 1em;
 }
 
 div#contact_us p{
@@ -172,25 +195,4 @@ div#contact_us input[type=submit]{
     border: 2px solid black;
 }
 
-section#firstSection div{
-    padding: 1em;
-    font-size: 1em;
-}
 
-
-
-section#services div{
-    display: inline-block;
-    width: 30%;
-}
-
-section#services div img{
-    display: inline-block;
-    width: 30%;
-}
-
-section#services div h3,p{
-    display: inline-block;
-    color: black;
-    width: 60;
-}

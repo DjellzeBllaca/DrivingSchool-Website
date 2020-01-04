@@ -1,0 +1,189 @@
+
+/*stilizimi i main*/
+
+#ballina{
+    background-image: url('../images/bg_3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+
+}
+
+#about{
+    font-family: "Caslon SB Regular SC", Caslon Classico SC;
+    background-color:#2B2B2B;
+    padding:9% 20% 5% 20%;
+    text-align: center;
+    color:#ababab;
+}
+#about p{
+    font-size: 1.2em;
+}
+#about h1{
+    font-size: 2.3em;
+    font-weight: 300;
+}
+
+article h1, p{
+    color: white;
+}
+
+section {
+    padding:0% 0% 1% 5%;
+	display:flex; 
+	flex-direction: row;
+}
+
+.ins1 p{
+	color: #474747;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.7em;
+}
+.team1 {
+	display:inline-block;
+	text-align:left;
+}
+.ins2 p{
+	color: #474747;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.7em;
+}
+.team2 {
+	display:inline-block;
+	text-align:left;
+}
+.ins3 p{
+	color: #474747;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.7em;
+}
+.team3 {
+	display:inline-block;
+	text-align:left;
+}
+.ins4 p{
+	color: #474747;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.7em;
+}
+.team4 {
+	display:inline-block;
+	text-align:left;
+}
+#h2 {
+	text-align: center;
+	font-size: 1.8em;
+	color: #041934;
+	text-transform: capitalize;
+	font-style: italic;
+}
+.ins {
+	margin: auto;
+	width: 80%;
+	display:flex; 
+	flex-direction: row;
+	text-align: center;
+	padding: 0;
+}
+
+div[class^="team"] span {
+  	text-transform: uppercase;
+  	color: #7E7E7E;
+  	font-size: 14px;
+  	font-weight: 800;
+	padding-left: 55px;
+}
+.ig1 img
+	{display:inline-block;
+	vertical-align:center;}
+
+.ig1 img:hover
+    {
+		transform: rotateY(360deg);
+		transition: 1s;}
+.ig2 img:hover 
+	{	transform: translate(100px,50px);	
+		transition: 1s;}
+.ig3 img:hover 
+	{	transform: skewY(20deg);
+	}
+.ig4 img:hover 
+	{	transform: scale(1.6);
+	}
+.ig2 img
+	{display:inline-block;
+	vertical-align:center;}
+	
+.ig3 img{
+	display:inline-block;
+	vertical-align:center;
+}
+.ig4 img{
+	display:inline-block;
+	vertical-align:center;
+}
+.team1 h4{
+	text-transform:uppercase;
+	color:#414141;
+	font-size:22px;
+	font-weight:700;
+    text-align: center;
+    border-top: 3px solid #414141;
+}
+
+.team2 h4{
+	text-transform:uppercase;
+	color:#414141;
+	font-size:22px;
+	font-weight:700;
+    text-align: center;
+    border-top: 3px solid #414141;
+}
+
+
+.team3 h4{
+	text-transform:uppercase;
+	color:#414141;
+	font-size:22px;
+	font-weight:700;
+    text-align: center;
+    border-top: 3px solid #414141;
+}
+
+.team4 h4{
+	text-transform:uppercase;
+	color:#414141;
+	font-size:22px;
+	font-weight:700;
+    text-align: center;
+    border-top: 3px solid #414141;
+}
+.ig1 p
+	{width:250px;}
+	
+.ig2 p
+	{width:250px;}
+	
+.ig3 p
+	{width:250px;}
+
+.ig4 p
+	{width:250px;}
+
+.ig1 {padding-right: 25px;}
+.ig2 {padding-right: 25px;}
+.ig3 {padding-right: 25px;}
+.ig4 {padding-right: 25px;}
+
+#sectiondiv{
+    width: 100%;
+}
+
+section#sectiondiv div{
+    float: left;
+}
+

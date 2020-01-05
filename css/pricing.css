@@ -18,8 +18,27 @@ outline-style: groove;
 }
 
 
-tr:hover {background-color: #f5f5f5;}
+td:hover {background-color: #f5f5f5;}
 
+main section h1{
+    text-align: center;
+    margin: 10px auto;
+    color:rgb(82, 56, 46);
+}
+
+main section{
+    
+    background-color: rgb(192, 146, 128);
+    color: black;
+    padding: 20px;
+}
+
+#paragrafi{
+    font-size: 1.2em;
+    padding: 10px;
+    column-count: 4;
+    column-gap: 20px;
+}
 #game{
     margin: 50px auto;
     padding: 20px;
@@ -34,4 +53,20 @@ tr:hover {background-color: #f5f5f5;}
     color: white;
     font-weight: bold;
     font-size: 2em;
+}
+
+#clickme{
+    margin: 5% 40%;
+}
+
+.buttonClick{
+    background-color: #2d2d2d;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    border: none;
+    width: 300px;
+    height: 60px;
+    margin: 5px;
 }

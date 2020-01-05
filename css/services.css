@@ -27,10 +27,14 @@ article.services {
         display: inline;
     }
 
+   
+
     .left {
         padding:10px;
         float:left;
       }
+
+   
       
       .main {
         padding:10px;
@@ -81,6 +85,11 @@ article.services {
         
     div.kat1 img {
         width:100%;
+       transform: rotateX(90deg); 
+       transform: rotateY(180deg); 
+
+
+          
         }
         
     div.kat1:hover img {

@@ -37,7 +37,8 @@ div#contactUs input[type=button]{
     margin: 40px 0px;
     float: right;
     width: 25%;
-    background-color: #2B2B2B;;
+    background-color: #2B2B2B;
+    background-origin: content-box, padding-box;
     border-radius: 4px;
     color: white;
     font-family: "Caslon SB Regular SC", Caslon Classico SC;
@@ -57,7 +58,9 @@ div#contactUs input[type=button]{
     padding: 50px 0px;
 }
 
-
+#services a{
+   text-decoration: none;
+}
 
 .service{
     height: 100%;
@@ -82,7 +85,7 @@ color:black;
 .text2
 {   padding: 0px 10px;
     display: inline-block;
-    width: 70%;
+    width: 65%;
 }
 
 
@@ -162,6 +165,11 @@ fieldset legend
 
 .feauture1 p
 {   color: rgb(150,143,143);
+    height: 35px;
+    width: 100%; 
+     overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 
 }
 

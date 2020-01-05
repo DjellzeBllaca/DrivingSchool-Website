@@ -12,12 +12,31 @@
     background: linear-gradient(90deg,rgb(236, 184, 115) 0%, rgb(82, 56, 46) 100%);
     padding:5% 20% 5% 20%;
     text-align: center;
-    color:#ababab;
+	color:#ababab;
+
+	
+
 }
+
+#transition {
+	width: 100px;
+	height: 10px;
+	background: rgb(170, 170, 170);
+	-webkit-transition: width 4s; /* For Safari 3.1 to 6.0 */
+	transition: width 4s;
+  }
+  
+  #transition:hover {
+	width: 100%;
+  }
+
 #about p{
-    font-size: 1.2em;
+	font-size: 1.2em;
+	outline-offset: 3px;
+
 }
 #about h1{
+	text-shadow: 2px 2px rgb(85, 17, 31);
     font-size: 2.3em;
     font-weight: 300;
 }
@@ -25,6 +44,7 @@
 article h1, p{
     color: white;
 }
+
 
 section {
     padding:0% 0% 1% 5%;

@@ -57,6 +57,37 @@ nav#mainMenu{
     background-color:#2B2B2B;
 }
 
+
+nav ul li div#dropdown {
+    
+    position: absolute;
+    background-color: #2b2b2b;
+    width: fit-content;
+	right: 5px;
+	top: 105px;
+    z-index: 2;
+    -webkit-transition: height 1s;
+    transition: height 1s;
+  }
+  nav ul li div#dropdown ul{
+      display: none;
+  }
+
+ 
+ nav ul li div#dropdown ul li a {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    
+  }
+  nav ul li div#dropdown ul li a:hover {background-color:  rgb(236, 184, 115); color: black;}
+
+  nav ul li:hover div#dropdown {display: block; height: fit-content;}
+  nav ul li:hover div#dropdown ul{display: block; }
+
+
 header form{
     float: right;
     background-color: rgb(22, 21, 21);
@@ -88,6 +119,10 @@ header input[type="search"]{
 
 
   /*footer*/
+
+  footer{
+      float: left;
+  }
   footer div#footer_row1{
     padding: 30px 80px;
     background-color: #2D2D2D  ;  
@@ -201,5 +236,6 @@ footer div#footer_row2 p{
     display: inline-block;
     color: white;
 }
+
 
 

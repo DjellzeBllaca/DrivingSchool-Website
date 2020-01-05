@@ -1,4 +1,10 @@
+#ballina{
+    background-image: url('../images/bg_5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
 
+}
 td{
     padding: 20px;
 } 

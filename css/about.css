@@ -1,6 +1,4 @@
 
-/*stilizimi i main*/
-
 #ballina{
     background-image: url('../images/bg_3.jpg');
     background-repeat: no-repeat;
@@ -11,8 +9,8 @@
 
 #about{
     font-family: "Caslon SB Regular SC", Caslon Classico SC;
-    background-color:#2B2B2B;
-    padding:9% 20% 5% 20%;
+    background: linear-gradient(90deg,rgb(236, 184, 115) 0%, rgb(82, 56, 46) 100%);
+    padding:5% 20% 5% 20%;
     text-align: center;
     color:#ababab;
 }
@@ -34,50 +32,18 @@ section {
 	flex-direction: row;
 }
 
-.ins1 p{
-	color: #474747;
+.ins p{
+	color: rgb(82, 56, 46);
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.7em;
 }
-.team1 {
-	display:inline-block;
-	text-align:left;
-}
-.ins2 p{
-	color: #474747;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 1.7em;
-}
-.team2 {
-	display:inline-block;
-	text-align:left;
-}
-.ins3 p{
-	color: #474747;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 1.7em;
-}
-.team3 {
-	display:inline-block;
-	text-align:left;
-}
-.ins4 p{
-	color: #474747;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 1.7em;
-}
-.team4 {
-	display:inline-block;
-	text-align:left;
-}
-#h2 {
+
+
+#h3 {
 	text-align: center;
 	font-size: 1.8em;
-	color: #041934;
+    color: rgb(82, 56, 46);
 	text-transform: capitalize;
 	font-style: italic;
 }
@@ -90,12 +56,11 @@ section {
 	padding: 0;
 }
 
-div[class^="team"] span {
-  	text-transform: uppercase;
-  	color: #7E7E7E;
+div.team span {
+  	text-transform: capitalize;
+  	color:   rgb(236, 184, 115);
   	font-size: 14px;
   	font-weight: 800;
-	padding-left: 55px;
 }
 .ig1 img
 	{display:inline-block;
@@ -126,42 +91,16 @@ div[class^="team"] span {
 	display:inline-block;
 	vertical-align:center;
 }
-.team1 h4{
+.team h4{
 	text-transform:uppercase;
-	color:#414141;
+	color:rgb(145, 112, 70);
 	font-size:22px;
 	font-weight:700;
     text-align: center;
-    border-top: 3px solid #414141;
-}
-
-.team2 h4{
-	text-transform:uppercase;
-	color:#414141;
-	font-size:22px;
-	font-weight:700;
-    text-align: center;
-    border-top: 3px solid #414141;
+    border-top: 3px solid rgb(82, 56, 46);
 }
 
 
-.team3 h4{
-	text-transform:uppercase;
-	color:#414141;
-	font-size:22px;
-	font-weight:700;
-    text-align: center;
-    border-top: 3px solid #414141;
-}
-
-.team4 h4{
-	text-transform:uppercase;
-	color:#414141;
-	font-size:22px;
-	font-weight:700;
-    text-align: center;
-    border-top: 3px solid #414141;
-}
 .ig1 p
 	{width:250px;}
 	

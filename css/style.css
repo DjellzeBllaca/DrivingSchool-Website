@@ -23,9 +23,8 @@ div#contactUs p{
     color: white;
 }
 
-.after_content:after {
-    content: Të gatshëm, të përgjegjshëm dhe gjithmonë nën shërbimin tuaj.;
-
+.after_content::after{
+    content: "Zgjidhni rrugën më të shpejtë për patentën tuaj të shoferit. ";
 }
 
 div#contactUs input[type=button]{
@@ -69,14 +68,8 @@ color:black;
 
 }
 
-/* .service
-{   background-color: white; 
-    vertical-align: middle;
-    padding: 10px;
-} */
 .service img
 {
-    float: left;
     width: 100px;
     height: 100px;
 }
@@ -92,7 +85,6 @@ color:black;
     font-size: 1.5em;
     font-weight: bold;
     color: rgb(82, 56, 46);
-
 }
 
 .text2 p{

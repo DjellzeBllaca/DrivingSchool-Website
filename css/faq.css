@@ -1,21 +1,31 @@
 /*main*/
+#ballina{
+    background-image: url('../images/bg_6.jpg');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    height: 550px;
 
+}
 #vid{
     text-align: center;
-    color: white;
     font-style: italic;
     font-size: 2em;
-    padding: 5px;
+    padding-top: 30px;
+}
+#vid h2{
+    color: white;
+    padding-bottom: 20px;
 }
 
-#faq p,h1{
+#faq p{
     color: #222222;
     width:90%;
     margin:1% auto;
 }
 
 #faq h1{
-    color: teal;
+    color:   rgb(192, 127, 66);
 }
 td{
     padding: 20px;

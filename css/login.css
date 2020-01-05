@@ -1,0 +1,307 @@
+
+body
+{
+	background-image: url('../images/bck.jpg');
+    margin-top:100px ;
+	background-attachment:fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+
+
+span
+{
+	color:red;
+	background: white;
+}
+
+.container
+{
+	width:280px;
+	height:270px;
+	text-align:center;
+	background-color:rgba(52, 73, 94,0.7);
+	border-radius:10px;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-right:70px;
+	float: right;
+	
+}
+.container img
+{
+	width:90px;
+	height:90px;
+	margin-top: -50px;
+	margin-bottom:25px;
+	
+}
+.container input[type="text"],
+.container input[type="password"]
+{
+	width:230px;
+	height:40px;
+	font-size:15px;
+	border:none;
+	margin-bottom:15px;
+	border-radius:7px;
+	background-color:#fff;
+	padding-left:30px;	
+}
+
+.form-input a
+{
+	color:#fff;
+}
+p {
+    padding: 7px 0 7px 0;
+    font-weight: 500;
+    font-size: 14pt;
+
+}
+.agreement a {
+    color: black;
+    text-decoration:none;
+}
+.agreemen a:hover{
+    color: #abda0f;
+    text-decoration: none;
+	
+}
+h1 {
+    font-weight:200;
+    color: #fff;
+    font-size:14pt;
+    padding-left:33px;
+    margin:7px 5px 8px 8px;
+}
+h4 {
+    padding:1px;
+    color: #26734d;
+    font-size:12pt;
+    font-weight:100;
+    text-transform:uppercase;
+}
+form.register{
+    width:870px;
+    float:left;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left:10px;
+    height:730px;
+	background-color:rgba(52, 73, 94, 0.7);
+    padding:20px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:20px;
+}
+form p{
+    font-size: 12pt;
+    clear:both;
+    margin: 0;
+    color:black;
+    padding:4px;
+}
+form.register fieldset.row1
+{
+    width:800px;
+    padding:5px;
+    float:left;
+    border-top:1px solid #F5F5F5;
+    margin-bottom:15px;
+	height: 100px;
+	
+}
+.row1 p 
+{
+	color: white;
+}
+form.register fieldset.row1 label{
+     width:100px;
+    float: left;
+    margin-right: 6px;
+    margin-top:2px;
+}
+form.register fieldset.row2
+{
+    border-top:1px solid #F1F1F1;
+    border-left:1px solid #F1F1F1;
+    height:270px;
+    padding:4px;
+    float:left;
+	width: 842px;
+}
+form.register fieldset.row3
+{
+    border-top:1px solid #F1F1F1;
+    padding:3px;
+    float:left;
+    margin-bottom:25px;
+	height:270px;
+    width:200px;
+}
+form.register fieldset.row4
+{
+    border-top:1px solid #F1F1F1;
+    border-right:1px solid #F1F1F1;
+    padding:3px;
+    width:200px;
+	/*margin-left:90px;*/
+	float:left;
+    
+	
+	
+}
+
+form.register .infobox{
+    float:left;
+    margin-top:0;
+    border: 1px solid #F1F1F1;
+    padding:0;
+    width:420px;
+    height:90px;
+    font-size:12px;
+    background: #FAFAD2;
+}
+form.register legend
+{
+    color: #fff;
+    padding:2px;
+    margin-left: 1px;
+    font-weight:bold;
+    font-size: 20px;
+    font-weight:100;
+}
+form.register label{
+    color:#fff;
+    width:130px;
+    float: left;
+    text-align: left;
+    margin-left:2px;
+    margin-top:2px;
+}
+form.register label.optional{
+    float: left;
+    text-align: left;
+    margin-left: 2px;
+    margin-top:2px;
+    
+}
+form.register label.obinfo{
+    float:left;
+    padding:1px;
+    font-style:italic;
+}
+form.register input{
+    width: 170px;
+    float: left;
+    margin-right:12px;
+
+}
+form.register input.long{
+    width: 247px;
+    color: #505050;
+}
+form.register input.short{
+    width: 35px;
+    color: #505050;
+}
+form.register input[type=radio]
+{
+    float:left;
+    width:15px;
+}
+form.register label.gender{
+    margin-top:1px;
+    margin-bottom:1px;
+    width:34px;
+    float:left;
+    text-align:left;
+    line-height:19px;
+}
+form.register input[type=text]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+form.register input[type=password]
+{
+    border: 1px solid #E1E1E1;
+    height: 18px;
+}
+		.button{
+				padding: 10px;
+				text-align: center;
+				
+			}
+.submit {
+				border: 1px solid #172d6e;
+				border-bottom: 1px solid #0e1d45;   
+				text-align: center;
+				color: white;
+				background-color: #7C627B;
+				border-radius: 20px;
+				padding: 8px 0;
+				margin: 20px;
+				width: 140px;
+}
+.submit0 {
+				border: 1px solid #172d6e;
+				border-bottom: 1px solid #0e1d45;   
+				text-align: center;
+				color: white;
+				background-color: #7C627B;
+				border-radius: 20px;
+				padding: 8px 0;
+				margin: 7px;
+				width: 140px;
+}
+.button0{
+		
+				padding: 10px;
+				text-align: center;
+				
+			}				
+.submit:hover {
+   background-color: #006699;
+}
+form.register input[type=text].year
+{
+	margin-left:2px;
+    border: 1px solid #fff;
+    height: 19px;
+    width:35px;
+}
+form.register input[type=checkbox] {
+    width:15px;
+    margin-top:3px;
+}
+form.register select
+{
+    border: 1px solid #E1E1E1;
+    width: 130px;
+    float:left;
+    color: #505050;
+    margin-left:2px;
+
+}
+form.register select.date
+{
+    width: 40px;
+}
+input:focus, select:focus{
+    background-color: #efffe0;
+}
+p.info{
+    font-size:8pt;
+    color: black;
+}
+p.agreement{
+    margin-left:10px;
+}
+p.agreement label{
+    width:390px;
+    text-align:left;
+    margin-top:2px;
+}

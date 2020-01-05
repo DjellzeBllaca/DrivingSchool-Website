@@ -1,0 +1,192 @@
+*{
+	
+	box-sizing:border-box;	
+}	
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 800px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.row1{
+	text-align:center;
+}
+/*stilizimi i main*/
+
+#ballina{
+    background-image: url('../images/road.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-attachment:fixed;
+    height: 550px;
+    width: 100%;
+    display: table;
+
+}
+
+#ballina h2 {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    background: rgba(255,255,255,0.3);
+    box-sizing: border-box;
+}
+
+.container {
+				
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 100%;
+}
+
+.container p{
+    color: rgb(82, 56, 46);
+}
+#middletext {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    border-left: 6px solid #7C627B;;
+    color: #7C627B;;
+    background-color: rgb(215,215,215);
+    padding: 10px 5px 10px 5px;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-sizing: content-box;
+}
+
+.container .firstp {
+    float: right;
+    text-align: center;
+}
+
+
+.firstp a, #nrtel, .emaili {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(82, 56, 46);
+}
+
+.firstp img{
+    max-width:100%;
+}
+
+
+
+#location {
+    border: 5px double #7C627B;;
+    border-radius: 8px;
+    padding: 5px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.emaili:hover {
+    color: red;
+    cursor: pointer;  
+}
+
+#nrtel:hover {
+    color: red;
+    cursor: help;
+}
+
+.lokacioni:hover {
+    color: red;
+    cursor: pointer;
+}
+
+div map{
+    margin-bottom:5px;
+    
+}
+
+
+form#forma {
+    width:100%;
+}
+
+
+form#forma label {
+    display: inline-block;
+    width:20%;
+    
+    }
+form#forma [type="submit"],[type="reset"] {
+    text-transform:uppercase;
+    font-size: 1.05em;
+    }
+
+form#forma textarea {
+    vertical-align:top;
+}
+form#forma input[type=text],input[type=tel], input[type=email], textarea, select {
+    width:30%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+div.button .submit {
+    border: 1px solid #172d6e;
+    border-bottom: 1px solid #0e1d45;   
+    text-align: center;
+    color: white;
+    background-color: #7C627B;
+    border-radius: 20px;
+    padding: 8px 0;
+    width: 140px;
+}
+div.button .submit:hover {
+background-color: #006699;
+}
+
+html{
+    background-color: rgb(248, 221, 185);  
+}

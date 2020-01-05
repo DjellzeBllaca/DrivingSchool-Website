@@ -1,4 +1,13 @@
 /*stilizimi i main*/
+
+#ballina{
+    background-image: url('../images/bg_4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+
+}
+
 div.of {
 	text-align: center;
 	font-size: 25px;	
@@ -32,21 +41,22 @@ article.services {
         padding:10px;
         /* width:33%; The width is 20%, by default */
       }
-      main p{
-          color: black;
+      main p, h1,h2{
+          color: rgb(145, 112, 70);
       }
       
 
       h1.kategorite_h{
-          border-top: teal solid 2px;
-          color: teal;
+          border-top:  rgb(236, 184, 115) solid 2px;
+          color:  rgb(145, 112, 70);
           font-size: 2em;
           text-align: center;
           padding-bottom: 30px;
+          padding-top: 30px;
       }
 
       div.kategorite {
-        background-color: teal;
+        background-color: rgb(236, 184, 115);
         display:flex;
         flex-direction:row;
         justify-content:space-around;
@@ -66,6 +76,7 @@ article.services {
         }
     div.kat1 div.shkrim {
         text-align:center;
+        color:rgb(145, 112, 70)
         }
         
     div.kat1 img {

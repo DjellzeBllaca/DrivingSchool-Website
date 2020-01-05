@@ -10,17 +10,19 @@
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
+    margin-top: 30px;
     text-align: center;
-    background-color: #EDEDED;
+    background-color:rgb(236, 184, 115);
     height: 120px;
     border-radius: 10px;
+    border: dashed 2px white;
 
 }
 #title h1{
+    padding-top: 30px;
     font-size: 2.3em;
     font-weight: 300;
-    margin:1% 0 2% 0;
-    color: teal;
+    color:  white;
 }
 </style>
 </head>
@@ -41,14 +43,20 @@
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="pricing.html">PRICING</a></li>
                 <li><a class="active">FAQ</a></li>
-                <li><a href="#">CONTACT</a></li>    
-            </ul> 
+                <li ><a href="#" id="drop">MORE</a>
+                    <div id="dropdown">
+                        <ul >
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="login.html">LOG IN</a></li>
+                    </ul>
+                </div>
+                </li>  
+            </ul>  
         </nav>
     </header>
 
    <main>
-    <div id="ballina"></div>
-    <section style="background-color: teal;">
+    <section id="ballina">
         <div id="vid">
             <h2>Si t&#235; kalosh testin me shkrim?</h2>
             <video width="auto" height="380" autoplay muted loop controls> 
@@ -63,8 +71,6 @@
     </div>  
 
     <div class="text">
-        
-        
         
     </div>
     

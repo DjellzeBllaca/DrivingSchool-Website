@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lifestyle</title>
+<link rel="stylesheet" href="css/login.css" />
+<link rel="stylesheet" href="css/header_footer.css" />
+</head>
+
+<body>
+    <header>
+        <form>
+            <input type="search" name="search" placeholder="Search Term Here"/>
+            <button id="searchButton">
+                <img id="searchImg" src="images/search.png" alt="search" title="search"/>
+            </button>
+        </form>
+        
+        <h1>FOKUS</h1>
+        <p id="header_p">Alert today - Alive tomorrow.</p>
+
+        <nav id="mainMenu">
+            <ul>
+                <li><a  class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li ><a href="#" id="drop">MORE</a>
+                    <div id="dropdown">
+                        <ul >
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a class="active">LOG IN</a></li>
+                    </ul>
+                </div>
+                </li>  
+            </ul>  
+        </nav>
+    
+    </header>
+    <main>
+
+        <div id="ballina"></div>
+        <div class="container">
+			<img src="images/man.png" alt="login" width="200">
+
+			<form name="frm1" onsubmit="return validateForm1()">
+				<!--forme qe useri te shton te dhena-->
+				<div class="form-input">
+					<input type="text" name="username" placeholder="Shkruani email adresen"> <!-- useri fut te dhena -->
+				</div> <!-- ndarje ose seksion ne html-->
+				<div class="form-input">
+					<input type="password" name="fjalkalimi" placeholder="Fjal&#235;kalimi">
+				</div>
+				<input class="submit0" type="submit" name="submit0" value="Kyqu" onclick="return validateForm1()"><br />
+				<a href="#">Keni harruar fjalëkalimin?</a>
+
+			</form>
+
+		</div>
+		<form class="register" id="frm" name="frm" onsubmit="return validateForm()">
+			<h1>Regjistrimi</h1>
+			<fieldset class="row1">
+				<legend>T&#235; dh&#235;nat e llogaris&#235;</legend>
+				<p>
+					<label>Email adresa*</label>
+					<input type="text" name="email" id="email" onblur="isEmailOk(this, document.getElementById('email_help'))" />
+					<span id="email_help"></span><br />
+				</p>
+				<p>
+					<label>Fjal&#235;kalimi* </label>
+					<input type="password" name="myPassword" id="myPassword" onkeyup="Validate()" />
+					<input type="checkbox" onclick="myFunction()">
+					<label>P&#235;rserite Fjal&#235;kalimin*</label>
+					<input type="password" id="myPassword1" name="myPassword1" onkeyup="Validate()" />
+					<input type="checkbox" onclick="myFunction1()">Show password
+					<br>
+					<span><strong id="matching"></strong></span>
+				</p>
+			</fieldset>
+			<fieldset class="row2">
+				<legend>T&#235; dh&#235;nat personale*</legend>
+				<p>
+					<label>Emri *</label>
+					<input type="text" name="name" id="name" onblur="isNameOk(this, document.getElementById('name_help'))" />
+					<span id="name_help"></span>
+				</p>
+				<p>
+					<label>Telefoni *</label>
+					<input type="text" name="phone" id="phone" onblur="isPhoneOk(this, document.getElementById('phone_help'))" />
+					<span id="phone_help"></span>
+				</p>
+				<p>
+					<label class="optional"> <strong>Rruga :</strong></label>
+					<input type="text" class="long" name="street" id="street" onblur="isStreetOk(this, document.getElementById('street_help'))" />
+					<span id="street_help"></span>
+				</p>
+				<p>
+					<label>Qyteti *</label>
+					<input type="text" class="long" name="city" id="city" onblur="isCityOk(this, document.getElementById('city_help'))" />
+					<span id="city_help"></span>
+				</p>
+				<p>
+					<label>Vendi *</label>
+					<select name="capital">
+						<!-- krijon nje liste drop-down-->
+						<option value="">&nbsp;</option>
+						<option value="1">SHBA;</option>
+						<option value="2">Shqiperi;</option>
+						<option value="3">Kosov&#235;</option>
+						<option value="4">Gjermani; </option>
+					</select>
+				</p>
+				<p>
+					<label class="optional"><strong>Website :</strong></label>
+					<input class="long" type="text" value="http://" name="website" id="website" onblur="isWebsiteOk(this, document.getElementById('website_help'))" />
+					<span id="website_help"></span>
+				</p>
+				<p>
+					<label>Emri i Bankes *</label>
+					<select name="bank">
+						<option value="">&nbsp;</option>
+						<option value="1">Procredit Bank</option>
+						<option value="2">Banka Për Biznes</option>
+						<option value="3">Banka Ekonomike</option>
+						<option value="4">Raiffeisen Bank Kosovo</option>
+						<option value="5">TEB Banka</option>
+						<option value="6">NLB Prishtina</option>
+						<option value="7">Türkiye İş Bankası</option>
+						<option value="8">Banka Kreditore e Prishtinës</option>
+					</select>
+				</p>
+				<p>
+					<label>Numri i Kart&#235;s*</label>
+					<input type="text" name="noCard" id="noCard" onblur="isNoCardOk(this, document.getElementById('noCard_help'))" />
+					<span id="noCard_help"></span>
+				</p>
+			</fieldset>
+			<div class="div2">
+				<fieldset class="row3">
+					<legend>Informata Shtes&#235;</legend>
+					<p class="p1">
+						<label>Gjinia *</label>
+						<input type="radio" name="gender" />
+						<label class="gender">M</label>
+						<input type="radio" name="cc" />
+						<label class="gender">F</label>
+					</p>
+					<p class="p1">
+						<label>Dat&#235;lindja *</label>
+						<select class="date" name="day">
+							<option value="">&nbsp;</option>
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+						<select name="month">
+							<option value="">&nbsp;</option>
+							<option value="1">Janar</option>
+							<option value="2">Shkurt</option>
+							<option value="3">Mars</option>
+							<option value="4">Prill</option>
+							<option value="5">Maj</option>
+							<option value="6">Qershorë</option>
+							<option value="7">Korrik</option>
+							<option value="8">Gusht</option>
+							<option value="9">Shtatorë</option>
+							<option value="10">Tetorë</option>
+							<option value="11">Nentorë</option>
+							<option value="12">Dhjetorë</option>
+						</select>
+						<input class="year" type="text" size="4" maxlength="4" name="year" />e.g 1976
+					</p>
+					<p class="p1">
+						<label>Komb&#235;sia *</label>
+						<select name="nationality">
+							<option value="">&nbsp;</option>
+							<option value="1">SHBA</option>
+							<option value="2">Shqiperi</option>
+							<option value="3">Kosov&#235;</option>
+							<option value="4">Gjermani</option>
+						</select>
+					</p>
+					<p class="p1">
+						<label>F&#235;mij&#235; *</label>
+						<input type="checkbox" value="" name="child" />
+					</p>
+					<div class="infobox">
+						<h4>Termat dhe Kushtet</h4>
+						<p>Informata rreth kontrat&#235;s për regjistrim</p>
+					</div>
+				</fieldset>
+				<fieldset class="row4">
+					<legend>Termat dhe p&#235;dit&#235;simet</legend>
+					<p class="agreement">
+						<label class="termat">* Pranoj <a href="#">Termat dhe kushtet</a></label>
+						<input type="checkbox" value="" />
+					</p>
+					<p class="agreement">
+						<label class="termat">Pranoj q&#235; instruktoret t&#235; me dergojn&#235; ofertat e p&#235;rditesuara.</label>
+						<input type="checkbox" value="" />
+					</p>
+				</fieldset>
+			</div>
+
+			<div class="button">
+				<input type="submit" class="submit" value="Regjistrohu &raquo;" onclick="return validateForm()" />
+			</div>
+		</form>
+
+</main>
+        <footer>
+        <div id="footer_row1">
+            <div class="footerDivs" id="contact">
+                <h2 class="divHeader">Contact Us</h2>
+                <ul>
+                    <li>Company Name</li>
+                    <li>
+                        <address>Street Name & Number</address>
+                    </li>
+                    <li>Town</li>
+                    <li>Post Code/Zip</li>
+                    <br>
+                    <li>Tel:xxxxxxxxxxxxxxxx</li>
+                    <li>Fax: xxxxxxxxx xxxx</li>
+                    <li>Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a></li>
+                    <br>
+                    </ul>
+            </div>
+
+                
+            <div class="footerDivs" id="links">
+                <h2 class="divHeader">Quick Links</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#top">Back to top of page</a></li><br>
+                        <li><a href="https://www.autoshkolla-ks.com/literatura/rregullat-e-trafikut"> Rregullat e trafikut </a></li><br>
+                        <li><a href="http://www.autoshkollaonline.com/kosove/" target="_blank"> Testi online </a></li><br>
+                        <li><a href="images/videoplayback.mp4"> Rreth tetit</a></li><br>
+                    
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerDivs" id="blog">
+                <h2 class="divHeader">From The Blog</h2>
+                <h3><strong>Blog Post Title</strong></h3>
+                <small>Posted by Admin on 00.00.0000</small>
+                <p>
+                Vestibulumaccumsan egestibulum eu justo convallis augue estas
+                aenean elit intesque facilispede estibulum.
+                </p>
+                <a id="read" href="#">Read More » </a>
+        </div>
+        
+            <div class="footerDivs" id="contact">
+                <h2 class="divHeader">Grab Our Newsletter</h2>
+                <form method="post" action="http://www.google.com">
+                    <input type="text" name="name" placeholder="Name"/>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="submit" name="submit" value="SUBMIT"/>
+                </form>   
+            </div>
+        </div>
+            <div id="footer_row2">
+                <p>Copyright &COPY; 2013 Domain Name-All Rights Reserved </p><p style="float: right;">Template by OS Templates</p>
+            </div>
+            
+	</footer>
+	<script src="JS/login.js">
+
+	</script>
+</body>
+
+    
+    </html>

@@ -86,7 +86,7 @@
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    border-left: 6px solid #7C627B;;
+    border: 6px groove #7C627B;;
     color: #7C627B;;
     background-color: rgb(215,215,215);
     padding: 10px 5px 10px 5px;
@@ -97,21 +97,18 @@
     box-sizing: content-box;
 }
 
-.container .firstp {
-    float: right;
-    text-align: center;
+.container .firstp{
+    padding: 10px;
 }
 
 
-.firstp a, #nrtel, .emaili {
+ a, #nrtel, .emaili {
     text-decoration: none;
     font-weight: bold;
     color: rgb(82, 56, 46);
 }
 
-.firstp img{
-    max-width:100%;
-}
+
 
 
 

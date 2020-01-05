@@ -1,14 +1,20 @@
 /*stilizimi i main*/
-#ballina{
-    background-image: url('../images/cover.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-	background-attachment:fixed;
-    height: 550px;
-
+.slideshow{
+    max-width: 100%;
+  position: relative;
 }
+.sl {  
+  animation-name: fade;
+  animation-duration: 1.5s;
+    }
+    
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+	}
 #sectBallina{
     background: linear-gradient(90deg,rgb(82, 56, 46) 0%,   rgb(236, 184, 115) 100%);
+
 }
 
 #contactUs{
@@ -192,5 +198,6 @@ div#contact_us input[type=submit]{
     padding: 8px;
     border: 2px solid black;
 }
+
 
 

@@ -28,8 +28,8 @@
     color:   rgb(192, 127, 66);
 }
 td{
-    padding: 20px;
     outline: thick solid #EDEDED;
+    background-color:#E3D3C5;
 }
 
 

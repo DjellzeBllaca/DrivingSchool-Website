@@ -9,15 +9,19 @@
 <body>
     <header>
         
-        <input type="search" name="search" placeholder="Search Term Here"/>
-        <!-- <button type="submit"><i class="fa fa-search fa_custom"></i> </button> -->
-        <h1>LIFESTYLE</h1>
-        <p>Free PSD Website Template</p>
+        <form>
+            <input type="search" name="search" placeholder="Search Term Here"/>
+            <button id="searchButton">
+                <img id="searchImg" src="images/search.png" alt="search" />
+            </button>
+        </form>
+        <h1>FOKUS</h1>
+        <p id="header_p">Alert today - Alive tomorrow.</p>
 
         <nav id="mainMenu">
             <ul><li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
-                <li><a href="services.html">SERVICES</a></li>
+                <li><a class="active">SERVICES</a></li>
                 <li><a href="pricing.html">PRICING</a></li>
                 <li><a href="FAQ.html">FAQ</a></li>
                 <li><a href="#">CONTACT</a></li>  
@@ -27,24 +31,23 @@
 
    <main>
     <div id="ballina"></div>
-    </div>
     <article class="services">
 		<div class="of">
 			<h2>Çfarë ofrojmë ne?</h2>
 		</div>
 		<div class="sherbimet_tona">
             <section class="left">
-                <div><img src="images/driving.png" alt="img3" width="120" height="120"/></div>
+                <div><img src="images/driving.png" alt="Pergatitje" width="120" height="120"/></div>
 				<h2>P&#235;rgatitje p&#235;r testin e praktik&#235;s.</h2>
 				<p>P&#235;rgatitje profesionale e praktik&#235;s p&#235;r provimin e patent&#235;s s&#235; shoferit.</p>
 			</section>
 			<section class="main">
-                <div><img src="images/test.jpg" alt="img3" width="120" height="120"/></div>
+                <div><img src="images/test.jpg" alt="Testi teori" width="120" height="120"/></div>
 				<h2>P&#235;rgatitje p&#235;r testin e teoris&#235;.</h2>
 				<p>P&#235;rgatitje profesionale e teoris&#235; p&#235;r provimin me shkrim te patent&#235;s s&#235; shoferit.</p>
 			</section>
 			<section class="right">
-                <div><img src="images/consulting.png" alt="img3" width="120" height="120"/></div>
+                <div><img src="images/consulting.png" alt="Guida" width="120" height="120"/></div>
 				<h2>Guid&#235; individuale dhe konsultime.</h2>
 				<p>Guid&#235; individuale p&#235;r ata q&#235; e kan&#235; tashm&#235; patent&#235;n.</p>
 			</section>
@@ -54,7 +57,7 @@
 	<div class="kategorite">
         
 		<div class="kat1">
-			<img src="images/golf4.jpg" alt="vetura" width="300" />
+			<img src="images/golf4.jpg" alt="kategoria B" width="300" />
 			<div class="shkrim">
 				<h3>Kategoria B</h3>
 				<p>Mjetet motorike q&#235; nuk tejkalojn&#235; mas&#235;n 3500 kg, q&#235; kan&#235; m&#235; s&#235; shumti
@@ -63,7 +66,7 @@
 			</div>
 		</div>
 		<div class="kat1">
-			<img src="images/truck.jpg" alt="truck" width="300" />
+			<img src="images/truck.jpg" alt="kategoria C,C1" width="300" />
 			<div class="shkrim">
 				<h3>Kategoria C , C1</h3>
 				<p>C: Mjetet motorike me mbi 3500 kg dhe me rimorkio e cila nuk tejkalon mas&#235; 750 kg.
@@ -71,7 +74,7 @@
 			</div>
 		</div>
 		<div class="kat1">
-			<img src="images/bus.jpeg" alt="bus" width="300" />
+			<img src="images/bus.jpg" alt="kategoria D" width="300" />
 			<div class="shkrim">
 				<h3>Kategoria D</h3>
 				<p>D: Mjetet motorike me mbi 3500 kg dhe me rimorkio e cila nuk tejkalon mas&#235; 750 kg.
@@ -83,11 +86,10 @@
 
    </main>
 
-
    <footer>
-    <div id="aaaaa">
+    <div id="footer_row1">
         <div class="footerDivs" id="contact">
-            <p class="divHeader">Contact Us</p>
+            <h2 class="divHeader">Contact Us</h2>
             <ul>
                 <li>Company Name</li>
                 <li>
@@ -105,41 +107,41 @@
 
             
         <div class="footerDivs" id="links">
-            <p class="divHeader">Quick Links</p>
+            <h2 class="divHeader">Quick Links</h2>
             <nav>
                 <ul>
-                    <li>&Gt;<a href="#">Link text here </a></li><br>
-                    <li>&Gt;<a href="#"> Link text here </a></li><br>
-                    <li>&Gt;<a href="#"> Link text here </a></li><br>
-                    <li>&Gt;<a href="#"> Link text here</a></li><br>
-                  
+                    <li><a href="#top">Back to top of page</a></li><br>
+                    <li><a href="https://www.autoshkolla-ks.com/literatura/rregullat-e-trafikut"> Rregullat e trafikut </a></li><br>
+                    <li><a href="http://www.autoshkollaonline.com/kosove/" target="_blank"> Testi online </a></li><br>
+                    <li><a href="images/videoplayback.mp4"> Rreth tetit</a></li><br>
+                
                 </ul>
             </nav>
         </div>
         <div class="footerDivs" id="blog">
-            <p class="divHeader">FORM THE BLOG</p>
-        <h3>Blog Post Title</h3>
-        <small>Posted by Admin on 00.00.0000</small>
-        <p>
-          Vestibulumaccumsan egestibulum eu justo convallis augue estas
-          aenean elit intesque sed facilispede estibulum.
-        </p>
-        <a href="#">Read More »</a>
-      </div>
-       
+            <h2 class="divHeader">From The Blog</h2>
+            <h3>Blog Post Title</h3>
+            <small>Posted by Admin on 00.00.0000</small>
+            <p>
+            Vestibulumaccumsan egestibulum eu justo convallis augue estas
+            aenean elit intesque facilispede estibulum.
+            </p>
+            <a id="read" href="#">Read More » </a>
+    </div>
+    
         <div class="footerDivs" id="contact">
-            <p class="divHeader">Grab Our Newsletter</p>
+            <h2 class="divHeader">Grab Our Newsletter</h2>
             <form method="post" action="http://www.google.com">
                 <input type="text" name="name" placeholder="Name"/>
                 <input type="text" name="email" placeholder="Email"/>
-                <input type="submit" value="SUBMIT"/>
+                <input type="submit" name="submit" value="SUBMIT"/>
             </form>   
         </div>
     </div>
-        <div id="bbb">
+        <div id="footer_row2">
             <p>Copyright &COPY; 2013 Domain Name-All Rights Reserved </p><p style="float: right;">Template by OS Templates</p>
         </div>
-         
+        
 </footer>
 
     

@@ -6,16 +6,22 @@
 <link rel="stylesheet" href="css/style.css" />
 <link rel="stylesheet" href="css/header_footer.css" />
 </head>
+
 <body>
     <header>
+        <form>
+            <input type="search" name="search" placeholder="Search Term Here"/>
+            <button id="searchButton">
+                <img id="searchImg" src="images/search.png" alt="search" title="search"/>
+            </button>
+        </form>
         
-        <input type="search" name="search" placeholder="Search Term Here"/>
-        <!-- <button type="submit"><i class="fa fa-search fa_custom"></i> </button> -->
         <h1>FOKUS</h1>
         <p id="header_p">Alert today - Alive tomorrow.</p>
 
         <nav id="mainMenu">
-            <ul><li><a class="active">HOME</a></li>
+            <ul>
+                <li><a  class="active">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="pricing.html">PRICING</a></li>
@@ -23,25 +29,25 @@
                 <li><a href="#">CONTACT</a></li>  
             </ul>  
         </nav>
-        
-
+    
     </header>
-    <div id="ballina"></div>
-    <section id="sectBallina">
-        <div id="contactUs">
-            <p>Të gatshëm, të përgjegjshëm dhe gjithmonë nën shërbimin tuaj.</br>
-                Zgjidhni rrugën më të shpejtë për patentën tuaj të shoferit.</p>
-            <input type="button" value="CONTACT US TODAY"/>
-        </div>
-    </section>
+    <main>
+
+        <div id="ballina"></div>
+        <section id="sectBallina">
+            <div id="contactUs">
+                <p class="after_content">Të gatshëm, të përgjegjshëm dhe gjithmonë nën shërbimin tuaj.</br></p>
+                <input type="button" value="CONTACT US TODAY"/>
+            </div>
+        </section>
 
     <div id="body">
         <div id="services">
             <a href="#">
                 <div class="service">
-                    <img src="images/f3.jpg" alt="foto1" >
+                    <img src="images/f3.jpg" alt="Kategoria A" title="Kategoria A">
                     <div class="text2">
-                        <h1><u>Kategoria B</u></h1>
+                        <h2><u>Kategoria B</u></h2>
                         <p>Mjetet motorike që nuk tejkalojnë masën 3500 kg, që kanë më së shumti tetë ulëse, përvec ulëses së shoferit, me rimorkio e cila nuk e tejkalon 750 kg.</p>
                     </div>
                 </div>
@@ -49,9 +55,9 @@
 
             <a href="#">
                 <div class="service">
-                    <img src="images/truck1.jpg" alt="foto1">
+                    <img src="images/truck1.jpg" alt="Kategoria A" title="Kategoria A">
                     <div class="text2">
-                        <h1><u>Kategoria C-C1</u></h1>
+                        <h2><u>Kategoria C-C1</u></h2>
                         <p>C: Mjetet motorike me mbi 3500 kg dhe me rimorkio e cila nuk tejkalon masë 750 kg. C1: Mjetet motorike prej 3500 kg deri 7500 kg dhe me rimorkio(750 kg).
                         </p>
                     </div>
@@ -59,10 +65,10 @@
             </a>
             <a href="#">
                 <div class="service">
-                    <img src="images/bus.jpg" alt="foto1">
+                    <img src="images/bus.jpg" alt="Kategoria A" title="Kategoria A">
 
                     <div class="text2">
-                        <h1><u>Kategoria D</u></h1>
+                        <h2><u>Kategoria D</u></h2>
                         <p>D: Mjetet motorike me mbi 3500 kg dhe me rimorkio e cila nuk tejkalon masë 750 kg. Autobusët me më shumë se 8 ulëse, me rimorkio e cila nuk tejkalon masën 750 kg.
                         </p>
                     </div>
@@ -73,7 +79,7 @@
         <div id="line">
             <fieldset>
                 <legend>
-                    <h1><b><i>LATEST WORK</i></b></h1>
+                    <h1><strong>LATEST WORK</strong></h1>
                 </legend>
             </fieldset>
 
@@ -83,31 +89,32 @@
             <div id="f1">
                     <a href="#">
                         <figure class="feauture1">                    
-                                <img src="images/trafic.jpg" alt="foto1" >
+                                <img src="images/trafic.jpg" alt="foto1" title="Rregullat e Trafikut" width="100px" height="100px">
                                 <figcaption>
                                     <h3>
                                         RREGULLAT E TRAFIKUT </h3> 
-                                        <p> Lorem Ipsum is simply dummy text of the printing</p>
+                                        <p>Ligji mbi bazat e sigurisë së trafikut në rrugë, i obligon të gjithë pjesëmarrësit në...
+                                        </p>
                                 </figcaption>
-                            </figure>
+                        </figure>
                         </a>
                         <a href="#">
                             <figure class="feauture1">                    
-                                <img src="images/practicTest.jpg" alt="foto1" >
+                                <img src="images/practicTest.jpg" alt="Testi Praktik" title="Testi Praktik" width="100px" height="100px">
                                 <figcaption>
                                     <h3>
                                         TESTI PRAKTIK </h3> 
-                                        <p> Lorem Ipsum is simply dummy text of the printing</p>
+                                        <p>Teste praktike  për marrjen e lejes së drejtimit të mjetit për kategorinë A, B, C dhe D.</p>
                                 </figcaption>
                             </figure>
                         </a>
                 <a href="#">
                     <figure class="feauture1">                    
-                        <img src="images/test1.jpg" alt="foto1" >
+                        <img src="images/test1.jpg" alt="Testi Teorik" title="Testi Teorik" width="100px" height="100px">
                         <figcaption>
                             <h3>
                                 TESTI TEORIK </h3> 
-                                <p> Lorem Ipsum is simply dummy text of the printing</p>
+                                <p>Teste teorike online për marrjen e lejes së drejtimit të mjetit për kategorinë A, B, C dhe D.</p>
                         </figcaption>
                     </figure>
                 </a>
@@ -115,31 +122,32 @@
             <div id="f2">
                 <a href="#">
                     <figure class="feauture1">                    
-                        <img src="images/prices.jpg" alt="foto1" >
+                        <img src="images/prices.jpg" alt="Cmimet" title="Cmimet" width="100px" height="100px" >
                         <figcaption>
                             <h3>
                                 CMIMET </h3> 
-                                <p> Lorem Ipsum is simply dummy text of the printing</p>
+                                <p>Cmimet për testin praktik dhe teorik për marrjen e lejes së drejtimit.
+                                </p>
                         </figcaption>
                     </figure>
                 </a>                
                 <a href="#">
                     <figure class="feauture1">                    
-                        <img src="images/sale.jpg" alt="foto1" >
+                        <img src="images/sale.jpg" alt="Zbritje" title="Zbritje" width="100px" height="100px" >
                         <figcaption>
                             <h3>
                                 PERFITONI NGA ZBRITJET </h3> 
-                                <p> Lorem Ipsum is simply dummy text of the printing</p>
+                                <p>Perfitoni nga ofertat e festave....</p>
                         </figcaption>
                     </figure>
                 </a>
                 <a href="#">
                     <figure class="feauture1">                    
-                        <img src="images/instructor.jpg" alt="foto1" >
+                        <img src="images/instructor.jpg" alt="Instruktori" title="Instruktori" width="100px" height="100px">
                         <figcaption>
                             <h3>
                                 NJIHUNI ME INSTRUKTORET</h3> 
-                                <p> Lorem Ipsum is simply dummy text of the printing</p>
+                                <p>Njihuni me instruktoret e autoshkolles "FOKUR"</p>
                         </figcaption>
                     </figure>
                 </a>
@@ -147,63 +155,66 @@
         </div>
     </div>
 
-<footer>
-    <div id="aaaaa">
-        <div class="footerDivs" id="contact">
-            <h2 class="divHeader">Contact Us</h2>
-            <ul>
-                <li>Company Name</li>
-                <li>
-                    <address>Street Name & Number</address>
-                </li>
-                <li>Town</li>
-                <li>Post Code/Zip</li>
-                <br>
-                <li>Tel:xxxxxxxxxxxxxxxx</li>
-                <li>Fax: xxxxxxxxx xxxx</li>
-                <li>Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a></li>
-                <br>
-                </ul>
-        </div>
+    </main>
+    
 
-            
-        <div class="footerDivs" id="links">
-            <h2 class="divHeader">Quick Links</h2>
-            <nav>
+    <footer>
+        <div id="footer_row1">
+            <div class="footerDivs" id="contact">
+                <h2 class="divHeader">Contact Us</h2>
                 <ul>
-                    <li><a href="#">Link text here </a></li><br>
-                    <li><a href="#"> Link text here </a></li><br>
-                    <li><a href="#"> Link text here </a></li><br>
-                    <li><a href="#"> Link text here</a></li><br>
-                  
-                </ul>
-            </nav>
+                    <li>Company Name</li>
+                    <li>
+                        <address>Street Name & Number</address>
+                    </li>
+                    <li>Town</li>
+                    <li>Post Code/Zip</li>
+                    <br>
+                    <li>Tel:xxxxxxxxxxxxxxxx</li>
+                    <li>Fax: xxxxxxxxx xxxx</li>
+                    <li>Email: <a href="mailto:contact@mydomain.com">contact@mydomain.com</a></li>
+                    <br>
+                    </ul>
+            </div>
+
+                
+            <div class="footerDivs" id="links">
+                <h2 class="divHeader">Quick Links</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#top">Back to top of page</a></li><br>
+                        <li><a href="https://www.autoshkolla-ks.com/literatura/rregullat-e-trafikut"> Rregullat e trafikut </a></li><br>
+                        <li><a href="http://www.autoshkollaonline.com/kosove/" target="_blank"> Testi online </a></li><br>
+                        <li><a href="images/videoplayback.mp4"> Rreth tetit</a></li><br>
+                    
+                    </ul>
+                </nav>
+            </div>
+            <div class="footerDivs" id="blog">
+                <h2 class="divHeader">From The Blog</h2>
+                <h3><strong>Blog Post Title</strong></h3>
+                <small>Posted by Admin on 00.00.0000</small>
+                <p>
+                Vestibulumaccumsan egestibulum eu justo convallis augue estas
+                aenean elit intesque facilispede estibulum.
+                </p>
+                <a id="read" href="#">Read More » </a>
         </div>
-        <div class="footerDivs" id="blog">
-            <h2 class="divHeader">From The Blog</h2>
-            <h3>Blog Post Title</h3>
-            <small>Posted by Admin on 00.00.0000</small>
-            <p>
-            Vestibulumaccumsan egestibulum eu justo convallis augue estas
-            aenean elit intesque facilispede estibulum.
-            </p>
-            <a id="read" href="#">Read More » </a>
-      </div>
-       
-        <div class="footerDivs" id="contact">
-            <h2 class="divHeader">Grab Our Newsletter</h2>
-            <form method="post" action="http://www.google.com">
-                <input type="text" name="name" placeholder="Name"/>
-                <input type="text" name="email" placeholder="Email"/>
-                <input type="submit" value="SUBMIT"/>
-            </form>   
+        
+            <div class="footerDivs" id="contact">
+                <h2 class="divHeader">Grab Our Newsletter</h2>
+                <form method="post" action="http://www.google.com">
+                    <input type="text" name="name" placeholder="Name"/>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="submit" name="submit" value="SUBMIT"/>
+                </form>   
+            </div>
         </div>
-    </div>
-        <div id="bbb">
-            <p>Copyright &COPY; 2013 Domain Name-All Rights Reserved </p><p style="float: right;">Template by OS Templates</p>
-        </div>
-         
-</footer>
+            <div id="footer_row2">
+                <p>Copyright &COPY; 2013 Domain Name-All Rights Reserved </p><p style="float: right;">Template by OS Templates</p>
+            </div>
+            
+    </footer>
 
     
 </body>

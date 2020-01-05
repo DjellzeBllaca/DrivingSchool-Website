@@ -5,21 +5,42 @@
 <title>Lifestyle</title>
 <link rel="stylesheet" href="css/faq.css" />
 <link rel="stylesheet" href="css/header_footer.css" />
+<style>
+    #title{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #EDEDED;
+    height: 120px;
+    border-radius: 10px;
+
+}
+#title h1{
+    font-size: 2.3em;
+    font-weight: 300;
+    margin:1% 0 2% 0;
+    color: teal;
+}
+</style>
 </head>
 <body>
     <header>
-        
-        <input type="search" name="search" placeholder="Search Term Here"/>
-        <!-- <button type="submit"><i class="fa fa-search fa_custom"></i> </button> -->
-        <h1>LIFESTYLE</h1>
-        <p>Free PSD Website Template</p>
+        <form>
+            <input type="search" name="search" placeholder="Search Term Here"/>
+            <button id="searchButton">
+                <img id="searchImg" src="images/search.png" alt="search"/>
+            </button>
+        </form>
+        <h1>FOKUS</h1>
+        <p id="header_p">Alert today - Alive tomorrow.</p>
 
         <nav id="mainMenu">
             <ul><li><a href="index.html">HOME</a></li>
                 <li><a href="about.html">ABOUT US</a></li>
                 <li><a href="services.html">SERVICES</a></li>
                 <li><a href="pricing.html">PRICING</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a class="active">FAQ</a></li>
                 <li><a href="#">CONTACT</a></li>    
             </ul> 
         </nav>
@@ -27,11 +48,12 @@
 
    <main>
     <div id="ballina"></div>
-    </div>
     <section style="background-color: teal;">
         <div id="vid">
             <h2>Si t&#235; kalosh testin me shkrim?</h2>
-            <video src="images/videoplayback.mp4" id="vid1" width="100%" height="380" autoplay muted loop controls></video><br />
+            <video width="auto" height="380" autoplay muted loop controls> 
+                <source src="images/videoplayback.mp4" id="vid1" type="video/mp4" >
+                </video><br />
             <button id="myBtn">Pause</button>    
         </div>
     </section>
@@ -54,7 +76,15 @@
                         <h1><strong>1. Literatura p&#235;r testin me shkrim?</strong></h1>
                         <p>Autoshkolla "Fokus" ofron kushte të përshtatshme për përgatitjen e kandidateve në pjesën teorike,duke angazhuar ligjërues 
                             profesional të cilët janë në gjendje gadishmërie të i'u ndihmojnë në qdo kohë.
-                            Libri bazë për autoshkollën është:</p>
+                            Librat bazë janë:
+                            <ul style="list-style-type:circle;" >
+                                <li>Rregullat e sigurise dhe komunikacionit</li>
+                                <li>Doracaku i autoshkolles</li>
+                                <li>Permbledhje testesh</li>
+                            </ul>
+                        </p>
+                            
+                        
                     </td>
                     <td>
                         <h1><strong>2. A ka ndonj&#235; kosto tjet&#235;r q&#235; kam nevoj&#235; p&#235;r t&#235; paguar?</strong></h1>
@@ -93,24 +123,29 @@
                         </p>
                     </td>
                     <td>
-                        <h1><strong>6. A ka ndonj&#235; kosto tjet&#235;r q&#235; kam nevoj&#235; p&#235;r t&#235; paguar?</strong></h1>
-                        <p>Ashtu si në cdo kurs trajnimi për patentë shofer, ju do të pritet për të paguar për testin tuaj  qoftë ai  të jetë
-                            me shkrim ose me vozitje. Nëse keni nevojë për përdorimin e një automjeti të trajnimit special për testin tuaj, ka një 
-                            pagesë prej 25 euro e cila  përfshin pjesëmarrjen e një trajneri i cili do të jetë në gjendje për të i'u ndihmuar në cdo praktikë 
-                            të minutës së fundit ose të i'u ndihmojë dhe me këshilla për të shmangur gabimet.</p>
+                        <h1><strong>6. Për cilat kategori ofroni trajnime?</strong></h1>
+                        <p>Ne ofrojme trajnime per keto kategori:
+                            <ul style="list-style-type: square;">
+                                <li>Kategorinë A</li>
+                                <li>Kategorinë B</li>
+                                <li>Kategorinë C</li>
+                                <li>Kategorinë C1</li>
+                                <li>Kategorinë D</li>
+                            </ul>
+                        </p>
                     </td>
                 </tr>
+            </ul>   
             </tbody>
         </table>
     </article>
 
    </main>
 
-
    <footer>
-    <div id="aaaaa">
+    <div id="footer_row1">
         <div class="footerDivs" id="contact">
-            <p class="divHeader">Contact Us</p>
+            <h2 class="divHeader">Contact Us</h2>
             <ul>
                 <li>Company Name</li>
                 <li>
@@ -128,41 +163,41 @@
 
             
         <div class="footerDivs" id="links">
-            <p class="divHeader">Quick Links</p>
+            <h2 class="divHeader">Quick Links</h2>
             <nav>
                 <ul>
-                    <li>&Gt;<a href="#">Link text here </a></li><br>
-                    <li>&Gt;<a href="#"> Link text here </a></li><br>
-                    <li>&Gt;<a href="#"> Link text here </a></li><br>
-                    <li>&Gt;<a href="#"> Link text here</a></li><br>
-                  
+                    <li><a href="#top">Back to top of page</a></li><br>
+                    <li><a href="https://www.autoshkolla-ks.com/literatura/rregullat-e-trafikut"> Rregullat e trafikut </a></li><br>
+                    <li><a href="http://www.autoshkollaonline.com/kosove/" target="_blank"> Testi online </a></li><br>
+                    <li><a href="images/videoplayback.mp4"> Rreth tetit</a></li><br>
+                
                 </ul>
             </nav>
         </div>
         <div class="footerDivs" id="blog">
-            <p class="divHeader">FORM THE BLOG</p>
-        <h3>Blog Post Title</h3>
-        <small>Posted by Admin on 00.00.0000</small>
-        <p>
-          Vestibulumaccumsan egestibulum eu justo convallis augue estas
-          aenean elit intesque sed facilispede estibulum.
-        </p>
-        <a href="#">Read More »</a>
-      </div>
-       
+            <h2 class="divHeader">From The Blog</h2>
+            <h3>Blog Post Title</h3>
+            <small>Posted by Admin on 00.00.0000</small>
+            <p>
+            Vestibulumaccumsan egestibulum eu justo convallis augue estas
+            aenean elit intesque facilispede estibulum.
+            </p>
+            <a id="read" href="#">Read More » </a>
+    </div>
+    
         <div class="footerDivs" id="contact">
-            <p class="divHeader">Grab Our Newsletter</p>
+            <h2 class="divHeader">Grab Our Newsletter</h2>
             <form method="post" action="http://www.google.com">
                 <input type="text" name="name" placeholder="Name"/>
                 <input type="text" name="email" placeholder="Email"/>
-                <input type="submit" value="SUBMIT"/>
+                <input type="submit" name="submit" value="SUBMIT"/>
             </form>   
         </div>
     </div>
-        <div id="bbb">
+        <div id="footer_row2">
             <p>Copyright &COPY; 2013 Domain Name-All Rights Reserved </p><p style="float: right;">Template by OS Templates</p>
         </div>
-         
+        
 </footer>
 
 </body>

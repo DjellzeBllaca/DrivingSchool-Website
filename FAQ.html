@@ -15,7 +15,10 @@
     background-color:rgb(236, 184, 115);
     height: 120px;
     border-radius: 10px;
-    border: dashed 2px white;
+    outline-style: dashed;
+    outline-color:rgb(88, 23, 28);
+    outline-width:medium;
+    outline-offset: 0px;
 
 }
 #title h1{
@@ -75,7 +78,7 @@
     </div>
     
     <article id="faq">
-        <table>
+        <table cellpadding="10">
             <tbody>
                 <tr>
                     <td>
@@ -145,7 +148,130 @@
             </tbody>
         </table>
     </article>
+    <canvas id="DemoCanvas" width="1600" height="40"></canvas>
+    <script>
+        var canvas = document.getElementById('DemoCanvas');
+        if (canvas.getContext) 
+        {
+        var ctx = canvas.getContext('2d');
+        ctx.lineWidth = 5; 
+        ctx.beginPath();
+        ctx.moveTo(0,20); 
+        ctx.lineTo(80, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();  
+        
+        ctx.beginPath();
+        ctx.moveTo(80, 0);
+        // line 1
+        ctx.lineTo(160, 20);
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+        // quadratic curve
+        ctx.beginPath();
+        ctx.moveTo(160,20); 
+        ctx.lineTo(240, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();  
+        // bezier curve
+        ctx.beginPath();
+        ctx.moveTo(240,0);    
+        ctx.lineTo(320, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';    
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(320,20);    
+        ctx.lineTo(400, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';    
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(400,0); 
+        ctx.lineTo(480, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke(); 
+        
+        ctx.beginPath();
+        ctx.moveTo(480,20); 
+        ctx.lineTo(560, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke(); 
+        
+        ctx.beginPath();
+        ctx.moveTo(560,0); 
+        ctx.lineTo(640, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();  
+        
+        ctx.beginPath();
+        ctx.moveTo(640,20); 
+        ctx.lineTo(720, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(720,0); 
+        ctx.lineTo(800, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(800,20); 
+        ctx.lineTo(880, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(880,0); 
+        ctx.lineTo(960, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(960,20); 
+        ctx.lineTo(1040, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(1040,0); 
+        ctx.lineTo(1120, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.moveTo(1120,20); 
+        ctx.lineTo(1200, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
 
+        ctx.beginPath();
+        ctx.moveTo(1200,0); 
+        ctx.lineTo(1280, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(1280,20); 
+        ctx.lineTo(1360, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(1360,0); 
+        ctx.lineTo(1440, 20); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(1440,20); 
+        ctx.lineTo(1520, 0); 
+        ctx.strokeStyle = ' rgb(236, 184, 115)';  
+        ctx.stroke();
+        
+        ctx.closePath();  
+        }  
+        </script>
    </main>
 
    <footer>

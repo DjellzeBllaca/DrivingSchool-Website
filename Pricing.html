@@ -38,11 +38,15 @@
     <!-- <div id="ballina"></div>
     </div> -->
     <main>
+
+     
+
+    
         <div id="ballina"></div>
 
    
-        <table>
-                    <tr>
+        <table cellspacing="pixels">
+              <tr>
               <th>Foto</th>
               <th>Kategoria</th>
               <th>BAZIKE</th>
@@ -175,6 +179,47 @@
                                 </tr>
           </table>
         </div>
+
+        <canvas id="myText" width="1200" height="100"
+        style="border:none;">
+        Your browser does not support the canvas element.
+        </canvas>
+        
+        <script>
+        var canvas = document.getElementById("myText");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "20px Arial";
+        ctx.fillText("Ne vijim gjeni lojen 'Image Puzzle' ",575,90);
+        </script>
+
+
+
+
+
+
+        <canvas id="myCanvas" width="1200" height="10"
+        style="border:none;">
+        Your browser does not support the canvas element.
+        </canvas>
+                
+
+            <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "black";
+        var grd = ctx.createLinearGradient(0,0,1200,0);
+        grd.addColorStop(0,"#2d2d2d");
+        grd.addColorStop(1,"white");
+
+        ctx.fillStyle = grd;
+      ctx.fillRect(80,0,1200,10);
+      </script>
+
+
+
+
+
+
         <div id="game">
             <a href="game.html">Play Game</a>
         </div>
@@ -236,6 +281,7 @@
                 </div>
                 
         </footer>
+       
             
         </body>
         
